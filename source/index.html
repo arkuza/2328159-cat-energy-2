@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg">
+  <link rel="icon" sizes="16x16" href="favicon/16x16.png" type="image/png" />
+  <link rel="icon" sizes="32x32" href="favicon/32x32.png" type="image/png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/180x180.png" type="image/png" />
+  <link rel="icon" sizes="192x192" href="favicon/192x192.png" type="image/png" />
+  <link rel="icon" sizes="512x512" href="favicon/512x512.png" type="image/png" />
+  <link rel=" manifest" href="manifest.vebmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -44,8 +53,15 @@
       <div class="product-advertisement__container">
         <h1 class="product-advertisement__title">Функциональное питание для котов</h1>
         <p class="product-advertisement__slogan">Занялся собой? Займись котом!</p>
-        <img class="product-advertisement__image" src="#"
-          alt="Изображение одного из вариантов функционального питания для котов" width="280" height="270">
+        <picture>
+          <source width="552" height="449" type="image/png" media="(min-width:1440px)"
+            srcset="images/advertisment/advertisment-desktop@1x.png 1x, images/advertisment/advertisment-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width:768px)"
+            srcset="images/advertisment/advertisment-tablet@1x.png 1x, images/advertisment/advertisment-tablet@2x.png 2x">
+          <img class="product-advertisement__image" src="images/advertisment/advertisement-mobile @1x.png"
+            srcset="source/images/advertisment/advertisement-mobile @2x.png 2x"
+            alt="Изображение одного из вариантов функционального питания для котов" width="280" height="270">
+        </picture>
         <a class="product-advertisement__link" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -78,7 +94,7 @@
         <ul class="product-benenits__list">
           <li class="product-benenits__item">
 
-              <p class="product-benenits__description">Функциональное питание
+            <p class="product-benenits__description">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
@@ -122,10 +138,20 @@
         <div class="result-example__slider slider">
           <div class="slider__container"></div>
           <button class="slider__button" type="button">Пролистать слайдер</button>
-          <img class="slider__image" src="#" alt=" Изображение кота до начала использования продукта" width="280"
-            height="256">
-          <img class="slider__image" src="#" alt=" Изображение   кота после использования продукта" width="280"
-            height="256">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width:768)"
+              srcset="images/slider/slider-before-tablet-desktop@1x.png 1x, images/slider/slider-before-tablet-desktop@2x.png 2x">
+            <img class="slider__image" src="images/slider/slider-after-mobile @1x.png"
+              srcset="images/slider/slider-before-mobile@2x.png 2x"
+              alt=" Изображение кота до начала использования продукта" width="280" height="256">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width:768px)"
+              srcset="images/slider/slider-after-tablet-desktop@1x.png 1x,images/slider/slider-after-tablet-desktop@2x.png 2x">
+            <img class="slider__image" src="images/slider/slider-after-mobile @1x.png"
+              srcset="images/slider/slider-after-mobile @2x.png 2x"
+              alt=" Изображение   кота после использования продукта" width="280" height="256">
+          </picture>
         </div>
       </div>
     </section>
@@ -136,7 +162,14 @@
           <p class="contacts-header__location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </header>
         <div class="contacts__map map">
-          <img class="map__picture" src="#" alt="Как добраться" width="320" height="362">
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width:1440px)"
+              srcset="images/contacts/map-desktop@1x.png 1x, images/contacts/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width:768px)"
+              srcset="source/images/contacts/map-tablet@1x.png 1x, images/contacts/map-tablet@2x.png 2x">
+            <img class="map__picture" src="images/contacts/map-mobile@1x.png"
+              srcset="images/contacts/map-mobile@2x.png 2x" alt="Как добраться" width="320" height="362">
+          </picture>
           <a class=" map__logo" href="#">
             <img class="map__logo-image" src="#" alt="Изображение логотипа" width="24" height="11">
           </a>
@@ -163,10 +196,11 @@
         </div>
         <div class="main-footer__developer-logo  developer-logo">
           <h2 class=" developer-logo__title">HTML Academy</h2>
-          <img class="developer-logo__image" src="#"  alt=" Изображение логотипа академии" width="27" height="34">
+          <img class="developer-logo__image" src="#" alt=" Изображение логотипа академии" width="27" height="34">
         </div>
       </div>
     </footer>
   </main>
 </body>
+
 </html>
