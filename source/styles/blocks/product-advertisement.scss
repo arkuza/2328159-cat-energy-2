@@ -1,12 +1,12 @@
-.product-advertisment{
-background-color: #68b738;
+.product-advertisement{
+background-color: rgba(104, 183, 56, 0.85);
 }
 
-.product-advertisment__container{
+.product-advertisement__container{
 
 }
 
-.product-advertisment__title{
+.product-advertisement__title{
   font-family: "Oswald","Arial",
   sans-serif;
   font-weight: 400;
@@ -18,28 +18,32 @@ background-color: #68b738;
 
 }
 
-.product-advertisment__slogan{
+.product-advertisement__slogan{
   font-family: "Oswald","Arial",
   sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 14px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 
 }
 
-.product-advertisment__image{
+.product-advertisement__image{
 
 }
 
-.product-advertisment__link{
+.product-advertisement__link{
 font-family: "Oswald","Arial",
 sans-serif;
 font-weight: 400;
-font-size: 14px;
-line-height: 14px;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
 color: #ffffff;
 background-color: #68b738;
 }
