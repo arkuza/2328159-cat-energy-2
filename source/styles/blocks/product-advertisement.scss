@@ -1,11 +1,13 @@
 .product-advertisement{
-background-color: rgba(104, 183, 56, 0.85);
-}
 
+}
 .product-advertisement__container{
+  background-image: url('../../images/advertisment/advertisemenet-cat.png');
+background-size:contain;
+ background-repeat: no-repeat;
+
 
 }
-
 .product-advertisement__title{
   font-family: "Oswald","Arial",
   sans-serif;
@@ -45,5 +47,6 @@ text-align: center;
 text-transform: uppercase;
 text-decoration: none;
 color: #ffffff;
-background-color: #68b738;
+background-color: #68B738;
+
 }
