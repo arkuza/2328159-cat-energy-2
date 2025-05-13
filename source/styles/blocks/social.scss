@@ -8,8 +8,40 @@
 
 .social__item{
 
-}
 
+
+}
 .social__link{
+  width: 28px;
+  height: 22px
+}
+
+.social__link--icon-youtobe{
+  display: block;
+ mask-image: url('../../icons/stack.svg#youtube');
+  mask-position: center;
+  mask-repeat: no-repeat;
+ background-color: #666666;
+ color: #666666;
+}
+
+.social__link--icon-telegram{
+  display:block;
+  mask-image: url('../../icons/stack.svg#telegram');
+  mask-position: center;
+  mask-repeat: no-repeat;
+ background-color: #666666;
+ color: #666666;
+}
+.social__link--vkontakte{
+  display: block;
+ mask-image: url('../../icons/stack.svg#vkontakte');
+  mask-position: center;
+  mask-repeat: no-repeat;
+ background-color: #666666;
+ color: #666666;
 
 }
+
+
+
