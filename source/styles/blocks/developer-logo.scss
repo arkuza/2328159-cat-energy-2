@@ -11,5 +11,11 @@ color: #444444;
 }
 
 .developer-logo__image{
-
+mask-image: url('../../icons/stack.svg#developer-logo');
+mask-position: center;
+mask-repeat: no-repeat;
+width: 27px;
+height: 34px;
+background-color: #666666;
+color: #666666;
 }

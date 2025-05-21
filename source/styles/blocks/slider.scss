@@ -7,6 +7,24 @@
 }
 
 .slider__button{
+position: relative;
+
+}
+
+.slider__button::before{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url('../../icons/stack.svg#slider-button');
+background-position: center;
+background-repeat: no-repeat;
+border: none;
+color: #666666;
+transform: translate(50px);
+top:-20px;
+left:-20px;
 
 }
 

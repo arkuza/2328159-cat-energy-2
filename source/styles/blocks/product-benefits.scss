@@ -20,13 +20,77 @@ color: #000000;
 .product-benefits__list{
 
 }
-
 .product-benefits__item{
 
 }
 
+.product-benefits__item--product-nutrients{
+
+}
+
+.product-benefits__item--product-nutrients::before{
+display: block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url('../../icons/stack.svg#product-nutrients');
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.product-benefits__item--form{
+
+}
+
+.product-benefits__item--form::before{
+  display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url('../../icons/stack.svg#product-form');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.product-benefits__item--using{
+
+}
+.product-benefits__item--using::before{
+  display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url('../../icons/stack.svg#product-using');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-benefits__item--result{
+}
+
+.product-benefits__item--result::before{
+  display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url('../../icons/stack.svg#product-result');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
 .product-benefits__description{
-font-family: "lato",
+ font-family: "lato",
 "Arial",sans-serif;
 font-weight: 400;
 font-size: 14px;
@@ -34,3 +98,5 @@ font-style: normal;
 line-height: 18px;
 color: #444444;
 }
+
+
