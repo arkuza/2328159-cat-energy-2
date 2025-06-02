@@ -5,6 +5,33 @@
   background-image: url('../../images/advertisment/advertisemenet-cat.png');
 background-size:contain;
  background-repeat: no-repeat;
+ min-height: 480px;
+ display: flex;
+ flex-direction: column;
+
+
+
+}
+
+@media(min-width: $tablet-width){
+  .product-advertisement__container{
+    background: #ffffff;
+    min-height: 609px;
+
+
+  }
+
+}
+
+@media(min-width: $desktop-width){
+  .product-advertisement__container{
+    display: grid;
+    min-height: 694px;
+    grid-template-columns: repeat(2,1fr);
+
+
+
+  }
 
 
 }
@@ -17,6 +44,12 @@ background-size:contain;
   line-height: 36px;
   text-align:center ;
   color: #ffffff;
+
+}
+@media( min-width: $tablet-width){
+  .product-advertisement__title{
+    color: #000000;
+  }
 
 }
 
@@ -33,9 +66,23 @@ background-size:contain;
 
 }
 
+@media( min-width:  $tablet-width ){
+  .product-advertisement__slogan{
+    color:#000000;
+  }
+}
+
+
 .product-advertisement__image{
 
 }
+
+.advertisment__cat-image{
+  background-image: url('../../images/advertisment/advertisemenet-cat.png');
+background-size:contain;
+ background-repeat: no-repeat;
+}
+
 
 .product-advertisement__link{
 font-family: "Oswald","Arial",

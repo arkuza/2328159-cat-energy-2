@@ -1,10 +1,43 @@
 .result-example{
-background-color: #eaeaea;
-}
 
+
+}
 .result-example__container{
+display: flex;
+flex-direction: column;
+min-width: 320px;
+min-height: 659px;
+margin: 0 auto;
+
+background-color: #eaeaea;
+
 
 }
+
+@media( min-width:$tablet-width){
+  .result-example__container{
+
+    background-color: #ffffff;
+  }
+}
+@media( min-width:$desktop-width){
+  .result-example__description-statistics-container{
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+
+
+@media( min-width:$desktop-width){
+  .result-example__description-slider-container{
+ display: flex;
+
+   background-color: #f2f2f2;
+  }
+ }
+
+
 
 .result-example__title{
   font-family: "Oswald","Arial",
@@ -18,6 +51,7 @@ background-color: #eaeaea;
 
 }
 
+
 .result-example__description{
 font-family: "lato",
 "Arial",sans-serif;
@@ -28,10 +62,19 @@ line-height: 18px;
 color: #444444;
 }
 
-.result-example__statistics{
 
+
+.result-example__statistics{
 }
+
+
 
 .result-example__slider{
 
+}
+
+@media(min-width:$tablet-width){
+  .result-example__slider{
+background-color: #f2f2f2;
+  }
 }

@@ -3,8 +3,14 @@
 }
 
 .slider__container{
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+
 
 }
+
+
 
 .slider__button{
 position: relative;

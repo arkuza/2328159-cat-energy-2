@@ -1,7 +1,27 @@
 .main-header{
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 65px;
 background-color: #ffffff;
 }
 
+@media( min-width: $tablet-width){
+  .main-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+min-width: 704px;
+min-height: 59px;
+  background-color: #ffffff;
+}
+}
+@media( min-width: $desktop-width){
+  .main-header{
+min-width: 1220px;
+min-height: 59px;
+}
+}
 .main-header__logo{
 
 }

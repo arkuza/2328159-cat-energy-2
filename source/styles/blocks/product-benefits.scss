@@ -3,7 +3,23 @@
 }
 
 .product-benefits__container{
+  min-width: 280px;
+  min-height:380px;
+  
+}
+@media(min-width:$tablet-width){
+  .product-benefits__container{
+    min-width: 768px;
+    min-height:781px;
 
+}
+}
+
+@media(min-width:$desktop-width){
+  .product-benefits__container{
+    min-width: 1220px;
+    min-height:570px;
+}
 }
 
 .product-benefits__title{
@@ -18,10 +34,44 @@ color: #000000;
 }
 
 .product-benefits__list{
-
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+margin: 0;
+padding: 0;
+list-style: none;
 }
-.product-benefits__item{
 
+@media(min-width:$tablet-width){
+  .product-benefits__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+
+@media(min-width:$desktop-width){
+  .product-benefits__list{
+display: flex;
+flex-direction: row;
+
+
+  }
+}
+
+
+.product-benefits__item{
+display: flex;
+flex-direction: row;
+gap:4px;
+}
+
+@media( min-width:$tablet-width){
+  .product-benefits__item{
+    display: flex;
+    flex-direction: column;
+    gap:31px;
+}
 }
 
 .product-benefits__item--product-nutrients{
@@ -40,6 +90,12 @@ display: block;
 
 }
 
+@media(min-width:$tablet-width){
+  product-benefits__item--product-nutrients::before{
+    width: 80px;
+    height:80px;
+  }
+}
 .product-benefits__item--form{
 
 }
@@ -55,7 +111,12 @@ display: block;
     background-repeat: no-repeat;
 
 }
-
+@media(min-width:$tablet-width){
+  .product-benefits__item--form::before{
+    width:80px;
+    height: 80px;
+  }
+}
 
 .product-benefits__item--using{
 
@@ -69,6 +130,13 @@ display: block;
     background-image: url('../../icons/stack.svg#product-using');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media(min-width:$tablet-width){
+  .product-benefits__item--using::before{
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .product-benefits__item--result{
@@ -86,7 +154,12 @@ display: block;
 
 }
 
-
+@media(min-width:$tablet-width){
+  .product-benefits__item--result::before{
+    width: 80px;
+    height: 80px;
+  }
+}
 
 
 .product-benefits__description{

@@ -29,7 +29,8 @@
           height="38">
       </picture>
       <picture>
-        <source media="(min-width:1440px)" type="image/svg+xml" srcset="images/logo-text-desktop.svg" width="118" height="21">
+        <source media="(min-width:1440px)" type="image/svg+xml" srcset="images/logo-text-desktop.svg" width="118"
+          height="21">
         <img class="main-header__logo-text" src="images/logo-text.svg" alt="Текст логотипа" width="101" height="18">
       </picture>
     </a>
@@ -61,18 +62,23 @@
   <main class=" main-container">
     <section class="product-advertisement">
       <div class="product-advertisement__container">
-        <h1 class="product-advertisement__title">Функциональное питание для котов</h1>
-        <p class="product-advertisement__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source width="552" height="449" type="image/png" media="(min-width:1440px)"
-            srcset="images/advertisment/advertisment-desktop@1x.png 1x, images/advertisment/advertisment-desktop@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width:768px)"
-            srcset="images/advertisment/advertisment-tablet@1x.png 1x, images/advertisment/advertisment-tablet@2x.png 2x">
-          <img class="product-advertisement__image" src="images/advertisment/advertisement-mobile @1x.png"
-            srcset="source/images/advertisment/advertisement-mobile @2x.png 2x"
-            alt="Изображение одного из вариантов функционального питания для котов" width="280" height="270">
-        </picture>
-        <a class="product-advertisement__link" href="#">Подобрать программу</a>
+        <div class="product-advertisement__wrapper">
+          <h1 class="product-advertisement__title">Функциональное<br> питание для котов</h1>
+          <p class="product-advertisement__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source width="552" height="449" type="image/png" media="(min-width:1440px)"
+              srcset="images/advertisment/advertisment-desktop@1x.png 1x, images/advertisment/advertisment-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width:768px)"
+              srcset="images/advertisment/advertisment-tablet@1x.png 1x, images/advertisment/advertisment-tablet@2x.png 2x">
+            <img class="product-advertisement__image" src="images/advertisment/advertisement-mobile @1x.png"
+              srcset="source/images/advertisment/advertisement-mobile @2x.png 2x"
+              alt="Изображение одного из вариантов функционального питания для котов" width="280" height="270">
+          </picture>
+          <a class="product-advertisement__link" href="#">Подобрать программу</a>
+        </div>
+        <div class="advertisment__cat-image">
+
+        </div>
       </div>
     </section>
     <section class="product-preview">
@@ -84,13 +90,13 @@
             <p class="product-preview__description">Ваш кот весит больше собаки и почти утратил способность
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="product-preview__catalog-link" href="#">каталог slim</a>
-          </li>
           <li class="product-preview__item  product-preview__item--pro">
             <h3 class="product-preview__title">Набор массы</h3>
             <p class="product-preview__description">Заработать авторитет среди дворовых котов и даже собак?
               Серия
               Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!.</p>
             <a class="product-preview__catalog-link" href="#">каталог Pro</a>
+
           </li>
         </ul>
       </div>
@@ -125,44 +131,51 @@
     <section class="result-example">
       <div class="result-example__container">
         <h2 class="result-example__title">Живой пример</h2>
-        <p class="result-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-          Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день.</p>
-        <div class="result-example__statistics  statistics">
-          <div class="statistics__statistics-example statistics-example">
-            <span class="statistics-example__value">5 КГ</span>
-            <span class="statistics-example__description">Снижение веса</span>
+        <div class="result-example__description-slider-container">
+          <div class="result-example__description-statistics-container">
+            <p class="result-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм Cat
+              Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+              спит по
+              16 часов в день.</p>
+            <div class="result-example__statistics  statistics">
+              <div class="statistics__statistics-example statistics-example">
+                <span class="statistics-example__value">5 КГ</span>
+                <span class="statistics-example__description">Снижение веса</span>
+              </div>
+              <div class="statistics__statistics-example statistics-example">
+                <span class="statistics-example__value">60 ДНЕЙ</span>
+                <span class="statistics-example__description">затрачено времени</span>
+              </div>
+              <div class="statistics__statistics-example statistics-example">
+                <span class="statistics-example__description statistics-example__description--food">Затраты на
+                  питание:</span>
+                <span class="statistics-example__value statistics-example__value--food">15 000 РУБ.</span>
+              </div>
+            </div>
           </div>
-          <div class="statistics__statistics-example statistics-example">
-            <span class="statistics-example__value">60 ДНЕЙ</span>
-            <span class="statistics-example__description">затрачено времени</span>
+          <div class="result-example__slider slider">
+            <div class="slider__container"></div>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Пролистать слайдер</span>
+            </button>
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width:768)"
+                srcset="images/slider/slider-before-tablet-desktop@1x.png 1x, images/slider/slider-before-tablet-desktop@2x.png 2x">
+              <img class="slider__image" src="images/slider/slider-before-mobile@1x.png"
+                srcset="images/slider/slider-before-mobile@2x.png 2x"
+                alt=" Изображение кота до начала использования продукта" width="280" height="256">
+            </picture>
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width:768px)"
+                srcset="images/slider/slider-after-tablet-desktop@1x.png 1x,images/slider/slider-after-tablet-desktop@2x.png 2x">
+              <img class="slider__image" src="images/slider/slider-after-mobile @1x.png"
+                srcset="images/slider/slider-after-mobile @2x.png 2x"
+                alt=" Изображение   кота после использования продукта" width="280" height="256">
+            </picture>
           </div>
-          <div class="statistics__statistics-example statistics-example">
-            <span class="statistics-example__description statistics-example__description--food">Затраты на
-              питание:</span>
-            <span class="statistics-example__value statistics-example__value--food">15 000 РУБ.</span>
-          </div>
-        </div>
-        <div class="result-example__slider slider">
-          <div class="slider__container"></div>
-          <button class="slider__button" type="button">
-            <span class="visually-hidden">Пролистать слайдер</span>
-          </button>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width:768)"
-              srcset="images/slider/slider-before-tablet-desktop@1x.png 1x, images/slider/slider-before-tablet-desktop@2x.png 2x">
-            <img class="slider__image" src="images/slider/slider-before-mobile@1x.png"
-              srcset="images/slider/slider-before-mobile@2x.png 2x"
-              alt=" Изображение кота до начала использования продукта" width="280" height="256">
-          </picture>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width:768px)"
-              srcset="images/slider/slider-after-tablet-desktop@1x.png 1x,images/slider/slider-after-tablet-desktop@2x.png 2x">
-            <img class="slider__image" src="images/slider/slider-after-mobile @1x.png"
-              srcset="images/slider/slider-after-mobile @2x.png 2x"
-              alt=" Изображение   кота после использования продукта" width="280" height="256">
-          </picture>
+
+
+
         </div>
       </div>
     </section>
@@ -178,12 +191,10 @@
               srcset="images/contacts/map-desktop@1x.png 1x, images/contacts/map-desktop@2x.png 2x">
             <source width="768" height="400" type="image/png" media="(min-width:768px)"
               srcset="source/images/contacts/map-tablet@1x.png 1x, images/contacts/map-tablet@2x.png 2x">
-            <img class="map__picture" src="images/contacts/map-mobile@1x.png"
-              srcset="images/contacts/map-mobile@2x.png 2x" alt="Как добраться" width="320" height="362">
+            <img class="map__picture" src="images/contacts/map-mobile @1x.png"
+              srcset="images/contacts/map-mobile @2x.png 2x" alt="Как добраться" width="320" height="362">
           </picture>
           <a class=" map__logo" href="#">
-            <img class="map__logo-image" src="#" alt="Изображение логотипа" width="24" height="11">
-          </a>
         </div>
       </div>
     </section>

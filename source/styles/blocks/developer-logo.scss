@@ -1,5 +1,14 @@
 .developer-logo{
+  display: flex;
+  flex-direction: row;
 
+ gap:140px;
+
+}
+@media(min-width:$tablet-width){
+  .developer-logo{
+    gap:23px;
+  }
 }
 
 .developer-logo__title{
