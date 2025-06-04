@@ -1,11 +1,32 @@
 .main-footer{
-   background-color: #f2f2f2
-}
+
+   }
 
 .main-footer__container{
-
+  display: block;
+  gap:40px;
+  min-width: 320px;
+  min-height: 240px;
+  background-color: #f2f2f2;
 }
 
+@media(min-width:$tablet-width){
+  .main-footer__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 768px;
+    min-height: 147px;
+}
+}
+
+@media(min-width:$tablet-width){
+  .main-footer__container{
+    min-width: 1140px;
+    min-height: 169px;
+
+  }
+}
 .main-footer__logo{
 
 }

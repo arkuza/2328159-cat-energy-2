@@ -2,8 +2,28 @@
 
 }
 
-.additional-product__container{
+.additional-products__container{
+ display: block;
+min-width: 100%;
+min-height: 904px;
+margin: 0 auto;
 
+}
+
+
+.additional-products-promo__container{
+  display: block;
+}
+
+@media(min-width:$desktop-width){
+  .additional-products-promo__container{
+    min-width: 1221px;
+    min-height: 288px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+gap: 70px;
+  }
 }
 
 .additional-products__headline{
@@ -16,5 +36,7 @@ color: #000000;
 }
 
 .additional-product__list{
-
+  display: block;
+  min-width: 280px;
+  min-height:519px;
 }

@@ -1,6 +1,9 @@
-.additional-product-list-features{
-
+.additional-products-list__features{
+display: flex;
+flex-direction: row;
+gap:112px
 }
+
 
 .additional-product-list-features__element{
 font-family: "lato",sans-serif;
@@ -20,4 +23,20 @@ font-style: normal;
 line-height: 14px;
 text-align: right;
 color: #444444;
+}
+
+
+
+.additional-products-list-features__link{
+  background-color: #68b738;
+}
+
+@media(min-width:768px){
+  .additional-product-list-features__element{
+    justify-self: end;
+
+}
+.additional-product-list-features__value{
+    justify-self: end;
+}
 }

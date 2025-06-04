@@ -13,13 +13,39 @@ color: #000000;
 border: none;
 
 }
+@media(min-width:$tablet-width){
+  .main-menu__toggle{
+    display:none;
+  }
+}
 
 .main-menu__container{
 
 }
 
 .main-menu__list{
+  display: block;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ color: #000000;
+}
 
+@media( min-width:$tablet-width){
+  .main-menu__list{
+    display: flex;
+    min-width: 436px;
+    min-height: 36px;
+}
+}
+
+@media( min-width:$desktop-width){
+  .main-menu__list{
+    display: flex;
+    min-width: 475px;
+    min-height: 40px;
+
+}
 }
 
 .main-menu__item{
@@ -32,4 +58,9 @@ line-height: 20px;
 text-transform: uppercase;
 color: #000000;
 }
+@media( min-width:$desktop-width){
+  .main-menu__item{
+     color: #ffffff;
 
+}
+}
