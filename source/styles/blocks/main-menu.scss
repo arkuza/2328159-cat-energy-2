@@ -24,8 +24,7 @@ border: none;
 }
 
 .main-menu__list{
-  display: flex;
-  flex-direction: column;
+  display: block;
  margin: 0;
  padding: 0;
  list-style: none;
@@ -35,9 +34,7 @@ border: none;
 @media( min-width:$tablet-width){
   .main-menu__list{
     display: flex;
-    flex-direction: column;
-
-   min-width: 436px;
+    min-width: 436px;
     min-height: 36px;
 }
 }

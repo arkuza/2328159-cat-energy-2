@@ -5,7 +5,8 @@
 .product-benefits__container{
   min-width: 280px;
   min-height:380px;
-  
+  margin: 0 auto;
+
 }
 @media(min-width:$tablet-width){
   .product-benefits__container{
@@ -34,9 +35,7 @@ color: #000000;
 }
 
 .product-benefits__list{
-  display: flex;
-  flex-direction: column;
-  gap:24px;
+  display: block;
 margin: 0;
 padding: 0;
 list-style: none;
@@ -68,9 +67,8 @@ gap:4px;
 
 @media( min-width:$tablet-width){
   .product-benefits__item{
-    display: flex;
-    flex-direction: column;
-    gap:31px;
+    display: block;
+
 }
 }
 
@@ -91,7 +89,7 @@ display: block;
 }
 
 @media(min-width:$tablet-width){
-  product-benefits__item--product-nutrients::before{
+  .product-benefits__item--product-nutrients::before{
     width: 80px;
     height:80px;
   }

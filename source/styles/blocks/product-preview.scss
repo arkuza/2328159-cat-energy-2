@@ -1,7 +1,5 @@
 .product-preview{
 background-color: #ffffff;
-display: flex;
-flex-wrap: wrap;
 }
 
 .product-preview__heading{
@@ -9,11 +7,13 @@ flex-wrap: wrap;
 }
 
 .product-preview__container{
-
+  display: block;
+margin: 0 auto;
 
 }
 
 .product-preview__list{
+
   display: flex;
 flex-direction: column;
 gap:20px;
@@ -39,8 +39,7 @@ gap:80px;
 }
 
 .product-preview__item{
-display: flex;
-flex-direction: column;
+display: block;
 min-width: 280px;
 min-height: 266px;
 background-color: #f2f2f2;

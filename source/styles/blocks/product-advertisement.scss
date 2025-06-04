@@ -2,12 +2,13 @@
 
 }
 .product-advertisement__container{
+  display: block;
   background-image: url('../../images/advertisment/advertisemenet-cat.png');
 background-size:contain;
  background-repeat: no-repeat;
  min-height: 480px;
- display: flex;
- flex-direction: column;
+ margin: 0 auto;
+
 
 
 
@@ -25,9 +26,8 @@ background-size:contain;
 
 @media(min-width: $desktop-width){
   .product-advertisement__container{
-    display: grid;
-    min-height: 694px;
-    grid-template-columns: repeat(2,1fr);
+min-height: 694px;
+
 
 
 
@@ -77,11 +77,6 @@ background-size:contain;
 
 }
 
-.advertisment__cat-image{
-  background-image: url('../../images/advertisment/advertisemenet-cat.png');
-background-size:contain;
- background-repeat: no-repeat;
-}
 
 
 .product-advertisement__link{

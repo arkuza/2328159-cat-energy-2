@@ -1,19 +1,20 @@
 .slider{
-
-}
-
-.slider__container{
+  width:560px;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  align-items: center;
   background-color: #eaeaea;
 
-
 }
 
 
+.slider__item{
+   width:280px;
+  overflow: hidden;
+}
 
 .slider__button{
-position: relative;
+position: absolute;
 
 }
 
@@ -35,5 +36,7 @@ left:-20px;
 }
 
 .slider__image{
+width:560px;
+height:auto;
 
 }

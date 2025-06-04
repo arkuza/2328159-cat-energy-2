@@ -3,18 +3,16 @@
 }
 
 .additional-products__container{
-  display: flex;
-flex-direction: column;
+ display: block;
 min-width: 100%;
 min-height: 904px;
 margin: 0 auto;
-gap:70px;
+
 }
 
 
 .additional-products-promo__container{
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 @media(min-width:$desktop-width){
@@ -23,7 +21,7 @@ gap:70px;
     min-height: 288px;
    display: flex;
    flex-direction: row;
-   justify-content: space-evenly;
+   justify-content: space-between;
 gap: 70px;
   }
 }
@@ -38,8 +36,7 @@ color: #000000;
 }
 
 .additional-product__list{
-  display: flex;
-  flex-direction: column;
+  display: block;
   min-width: 280px;
   min-height:519px;
 }

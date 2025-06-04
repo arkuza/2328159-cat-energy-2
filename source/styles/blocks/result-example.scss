@@ -3,10 +3,10 @@
 
 }
 .result-example__container{
-display: flex;
-flex-direction: column;
+  display: block;
 min-width: 320px;
 min-height: 659px;
+width: 100%;
 margin: 0 auto;
 
 background-color: #eaeaea;
