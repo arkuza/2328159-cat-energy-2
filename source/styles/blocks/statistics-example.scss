@@ -1,21 +1,154 @@
-.statistics-example{
-
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .statistics-example {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 104px;
+    gap: 10px;
+  }
 }
 
-.statistics-example__value{
-  font-family: "Oswald","Arial",
-  sans-serif;
+.statistics-example__module-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .statistics-example__module-wrapper {
+    margin-bottom: 0;
+    gap: 43px;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .statistics-example__module-wrapper {
+    gap: 43px;
+    margin-bottom: 60px;
+    justify-content: start;
+    flex-shrink: 0;
+  }
+}
+
+.statistics-example__module {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  width: 124px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 10px 5px;
+  min-height: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__module {
+    width: 162px;
+    min-height: 72px;
+  }
+}
+
+.statistics-example__module-value {
+  font-family:
+        "Oswald",
+        "Arial",
+        sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-style: normal;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   color: #000000;
-
+  overflow-wrap: anywhere;
 }
-.statistics-example__value--food{
-  font-family: "Oswald", "Arial",
-  sans-serif;
+
+@media (min-width: $tablet-width) {
+  .statistics-example__module-value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.statistics-example__module-description {
+  display: block;
+  position: absolute;
+  font-family:
+    "lato",
+    "Arial",
+    sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #000000;
+  left: 50%;
+  top: calc(100% - 8px);
+  width: 87px;
+  padding: 0 5px;
+  transform: translateX(-50%);
+  background-color: #eaeaea;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__module-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    width: max-content;
+    max-width: 143px;
+    padding: 0 9px;
+    top: calc(100% - 7px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .statistics-example__module-description {
+    background-color: #f2f2f2;
+    top: unset;
+    bottom: -6px;
+  }
+}
+
+.statistics-example__cost {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
+  .statistics-example__cost {
+    margin-bottom: 0;
+    flex-direction: column;
+    gap: 9px;
+    align-items: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .statistics-example__cost {
+    justify-content: start;
+    margin-bottom: 0;
+    gap: 63px;
+    padding-left: 2px;
+  }
+}
+
+.statistics-example__cost-value {
+  font-family:
+    "Oswald",
+    "Arial",
+    sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -23,21 +156,21 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  overflow-wrap: anywhere;
 }
 
-.statistics-example__description{
-font-family: "lato",
-"Arial",sans-serif;
-font-weight: 400;
-font-size: 12px;
-font-style: normal;
-line-height: 12px;
-text-align: center;
-color: #000000;
+@media (min-width: $tablet-width) {
+  .statistics-example__cost-value {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
-.statistics-example__description--food{
-  font-family: "Oswald", "Arial",
-  sans-serif;
+
+.statistics-example__cost-description {
+  font-family:
+         "Oswald",
+        "Arial",
+        sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -45,4 +178,13 @@ color: #000000;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: $tablet-width) {
+  .statistics-example__cost-description {
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 1px;
+  }
 }
