@@ -56,14 +56,13 @@
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .additional-products-list__item {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     padding: 26px 37px 27px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
-    gap:25px 0;
+    gap: 25px 0;
   }
 
   .additional-products-list__item:nth-child(2) {
@@ -77,16 +76,16 @@
 
 @media (min-width: 1440px) {
   .additional-products-list__item {
-    width:895px;
+    width: 895px;
     display: grid;
     grid-template-columns: 286px 286px 244px;
-    gap:39px;
-    padding: 15px 0 16px 0 ;
+    gap: 39px;
+    padding: 15px 0 16px;
   }
 }
 
 .additional-products-list__item:first-child {
-  border-top:1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
   padding-top: 25px;
 }
 
@@ -103,7 +102,7 @@
 }
 
 .additional-products-list__element {
-  font-family: "lato", sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   line-height: 14px;
@@ -163,9 +162,7 @@
 }
 
 .additional-products-list__value {
-  font-family:
-    "lato",
-    sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -200,10 +197,7 @@
 }
 
 .additional-products-list__title {
-  font-family:
-    "Oswald",
-    "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -233,10 +227,7 @@
 
 .additional-products-list__link {
   display: block;
-  font-family:
-    "Oswald",
-    "Arial"
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

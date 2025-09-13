@@ -38,10 +38,7 @@
 
 .additional-products__headline {
   position: relative;
-  font-family:
-    "Oswald",
-    "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -67,7 +64,7 @@
 @media (min-width: $desktop-width) {
   .additional-products__headline {
     margin-left: 0;
-    max-width:calc(100% - 100px);
+    max-width: calc(100% - 100px);
     font-size: 40px;
     line-height: 40px;
   }
@@ -145,10 +142,7 @@
 @media (min-width: 768px) and (max-width: 1439px) {
   .additional-products__promo-image {
     background-image: url("../../images/promo/promo-cat-tablet@2x.png");
-    // width: 707px;
-    min-height: 200px;
     flex-direction: row;
-    gap: 10px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -198,10 +192,7 @@
 }
 
 .additional-products__description {
-  font-family:
-    "lato",
-    "Arial",
-    sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

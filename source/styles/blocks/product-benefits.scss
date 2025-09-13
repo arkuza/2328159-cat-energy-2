@@ -50,10 +50,7 @@
 }
 
 .product-benefits__title {
-  font-family:
-    "Oswald",
-    "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   font-style: normal;
@@ -85,7 +82,7 @@
   .product-benefits__list {
     display: grid;
     grid-template-columns: repeat(2, min-content);
-    gap:37px 137px;
+    gap: 37px 137px;
     width: fit-content;
   }
 }
@@ -94,7 +91,7 @@
   .product-benefits__list {
     display: grid;
     grid-template-columns: repeat(4, 250px);
-    gap:75px 75px;
+    gap: 75px 75px;
     justify-items: start;
   }
 }
@@ -111,16 +108,16 @@
     position: relative;
     display: block;
     padding-top: 40px;
-    width:230px;
+    width: 230px;
     min-height: 280px;
   }
 
   .product-benefits__item:nth-child(1) {
-    width:225px;
+    width: 225px;
   }
 
   .product-benefits__item:nth-child(2) {
-    width:246px;
+    width: 246px;
   }
 
   .product-benefits__item:nth-child(3) {
@@ -137,10 +134,7 @@
   top: 0;
   right: 0;
   content: "1";
-  font-family:
-    "Oswald",
-    "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 280px;
   line-height: 280px;
   font-weight: 400;
@@ -262,16 +256,13 @@
 }
 
 .product-benefits__description {
-  font-family:
-    "lato",
-    "Arial",
-    sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 18px;
   color: #444444;
-  overflow-wrap :anywhere;
+  overflow-wrap: anywhere;
   margin: 0;
 }
 

@@ -1,7 +1,6 @@
 .slider {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
   position: relative;
   align-items: center;
@@ -90,13 +89,13 @@
   }
 
   &:hover,
-    &:focus,
-    &:focus-visible {
+  &:focus,
+  &:focus-visible {
     border-color: #68b738;
     outline: none;
 
     &::before,
-     &::after {
+    &::after {
       background-color: #68b738;
       outline: none;
     }

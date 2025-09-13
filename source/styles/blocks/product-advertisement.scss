@@ -11,8 +11,9 @@
 
 @media (min-width: $desktop-width) {
   .product-advertisement {
-    padding: 143px calc((100% - 1061px) / 2) 52px;
+    padding: 29px calc((100% - 1061px) / 2) 52px;
     margin-bottom: 82px;
+    position: static;
   }
 }
 
@@ -22,7 +23,7 @@
   width: 100%;
   height: calc(100% - 178px);
   position: absolute;
-  background: linear-gradient(#68b738d9, #68b738d9),url("../../images/advertisment/product-advertisment-cat-mobile@1x.png") no-repeat center / cover;
+  background: linear-gradient(rgba(104, 183, 56, 0.85)), (rgba(104, 183, 56, 0.85)), url("../../images/advertisment/product-advertisment-cat-mobile@1x.png") no-repeat center / cover;
   left: 0;
   right: 0;
   top: 0;
@@ -41,7 +42,7 @@
     height: 100%;
     max-height: 694px;
     width: 50%;
-    background: linear-gradient(#68b738d9, #68b738d9 ),url("../../images/advertisment/product-advertisment-cat-desktop@2x.png") no-repeat left/ cover;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/advertisment/product-advertisment-cat-desktop@2x.png") no-repeat left/ cover;
   }
 }
 
@@ -68,10 +69,7 @@
 }
 
 .product-advertisement__title {
-  font-family:
-      "Oswald",
-         "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   font-style: normal;
@@ -89,15 +87,12 @@
     line-height: 60px;
     text-align: start;
     margin-bottom: 40px;
-    color: #000000
+    color: #000000;
   }
 }
 
 .product-advertisement__slogan {
-  font-family:
-    "Oswald",
-    "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
@@ -152,10 +147,7 @@
 
 .product-advertisement__link {
   display: block;
-  font-family:
-    "Oswald",
-    "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -196,7 +188,7 @@
 
 .product-advertisement__link:active {
   background-color: #5eaa2f;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .product-advertisement__link:disabled {

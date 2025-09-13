@@ -14,7 +14,6 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    position: absolute;
     min-width: 1220px;
     width: 100%;
     min-height: 59px;
@@ -36,7 +35,7 @@
 
 @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .main-header__navigation {
-    padding: 25px 34px 0px 31px;
+    padding: 25px 34px 0 31px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,7 +45,7 @@
 
 @media (min-width: $desktop-width) {
   .main-header__navigation {
-    padding: 55px 110px 0;
+    padding: 55px 110px 0 111px;
     display: flex;
     gap: 50px;
     align-items: start;
@@ -235,6 +234,8 @@
   .main-header__menu-container {
     background-color: transparent;
     align-self: center;
+    width: 50%;
+    padding-left: 10px;
   }
 }
 
@@ -251,7 +252,7 @@
     min-width: 436px;
     min-height: 36px;
     flex-wrap: wrap;
-    gap:33px 12px;
+    gap: 33px 12px;
     align-items: center;
     justify-content: end;
   }
@@ -289,7 +290,7 @@
   .main-header__menu-item::after {
     content: "";
     position: absolute;
-    left :0;
+    left: 0;
     right: 0;
     bottom: -10px;
     width: 100%;
@@ -322,10 +323,7 @@
 }
 
 .main-header__menu-link {
-  font-family:
-    "Oswald",
-    "Arial",
-    sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -351,15 +349,19 @@
   }
 
   .main-header__menu-link:hover {
-    opacity: 0.6
+    opacity: 0.6;
   }
 
   .main-header__menu-link:focus {
-    opacity: 0.6
+    opacity: 0.6;
   }
 
-  .main-header__menu-link:disabled {
-    opacity: 0.3
+  .main-header__menu-link:focus-visible {
+    opacity: 0.6;
+  }
+
+  .main-header__menu-link:active {
+    opacity: 0.3;
   }
 }
 
