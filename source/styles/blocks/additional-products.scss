@@ -125,7 +125,7 @@
 }
 
 .additional-products__promo-image {
-  background-image: url("../../images/promo/promo-cat.png");
+  background-color: #68b738;
   width: 280px;
   min-height: 290px;
   background-repeat: no-repeat;
@@ -139,7 +139,13 @@
   flex-shrink: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (max-width: $mobile-only) {
+  .additional-products__promo-image {
+    background-image: url("../../images/promo/promo-cat.png");
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .additional-products__promo-image {
     background-image: url("../../images/promo/promo-cat-tablet@2x.png");
     flex-direction: row;

@@ -93,25 +93,37 @@
   &:focus-visible {
     border-color: #68b738;
     outline: none;
+  }
 
-    &::before,
-    &::after {
-      background-color: #68b738;
-      outline: none;
-    }
+  &:hover::before,
+  &:hover::after {
+    background-color: #68b738;
+    outline: none;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background-color: #68b738;
+    outline: none;
+  }
+
+  &:focus-visible::before,
+  &:focus-visible::after {
+    background-color: #68b738;
+    outline: none;
   }
 
   &:active {
     border-color: #5eaa2f;
+  }
 
-    &::before {
-      background-color: #5eaa2f;
-    }
+  &:active::before {
+    background-color: #5eaa2f;
+  }
 
-    &::after {
-      background-color: #5eaa2f;
-      opacity: 0.6;
-    }
+  &:active::after {
+    background-color: #5eaa2f;
+    opacity: 0.6;
   }
 }
 
