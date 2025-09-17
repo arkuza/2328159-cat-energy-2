@@ -6,6 +6,8 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg">
   <link rel="icon" sizes="16x16" href="favicon/16x16.png" type="image/png">
@@ -63,12 +65,18 @@
         <h1 class="product-advertisement__title">Функциональное<br> питание для котов</h1>
         <p class="product-advertisement__slogan">Занялся собой? Займись котом!</p>
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width:1440px)"
+          srcset="images/advertisement/advertisement-desktop@1x.webp 1x, images/advertisement/advertisement-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width:768px)"
+          srcset="images/advertisement/advertisement-tablet@1x.webp 1x, images/advertisement/advertisement-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" media="(min-width:320px)"
+          srcset="images/advertisement/advertisement-mobile@1x.webp 1x, images/advertisement/advertisement-mobile@2x.webp 2x">
           <source width="552" height="499" type="image/png" media="(min-width:1440px)"
-            srcset="images/advertisment/advertisment-desktop@1x.png 1x, images/advertisment/advertisment-desktop@2x.png 2x">
+            srcset="images/advertisement/advertisement-desktop@1x.png 1x, images/advertisement/advertisement-desktop@2x.png  2x">
           <source width="709" height="609" type="image/png" media="(min-width:768px)"
-            srcset="images/advertisment/advertisment-tablet@1x.png 1x, images/advertisment/advertisment-tablet@2x.png 2x">
-          <img class="product-advertisement__image" src="images/advertisment/advertisement-mobile@1x.png"
-            srcset="images/advertisment/advertisement-mobile@2x.png 2x"
+            srcset="source/images/advertisement/advertisement-tablet@1x.png 1x, images/advertisement/advertisement-tablet@2x.png  2x">
+          <img class="product-advertisement__image" src="images/advertisement/advertisement-mobile@1x.png"
+            srcset="images/advertisement/advertisement-mobile@2x.png 2x"
             alt="Изображение одного из вариантов функционального питания для котов" width="280" height="270">
         </picture>
         <a class="product-advertisement__link" href="form.html">Подобрать программу</a>
@@ -152,18 +160,26 @@
         <div class="result-example__slider slider">
           <div class="slider__item slider__item--left-cat">
             <picture>
+              <source  width="560" height="512" type="image/webp" media="(min-width:768px)"
+              srcset="images/slider/slider-before-tablet-desktop@1x.webp 1x, images/slider/slider-before-tablet-desktop@2x.webp 2x">
+              <source  width="280" height="256" type="image/webp" media="(min-width:320px)"
+              srcset="images/slider/slider-before-mobile@1x.webp 1x, images/slider/slider-before-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width:768px)"
                 srcset="images/slider/slider-before-tablet-desktop@1x.png 1x, images/slider/slider-before-tablet-desktop@2x.png 2x">
-              <img class="slider__image" src="images/slider/slider-before-mobile@1x.png"
+              <img class="slider__image" loading="lazy" src="images/slider/slider-before-mobile@1x.png"
                 srcset="images/slider/slider-before-mobile@2x.png 2x"
                 alt="Изображение кота до начала использования продукта" width="280" height="256">
             </picture>
           </div>
           <div class="slider__item slider__item--right-cat">
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width:768px)"
+              srcset="images/slider/slider-after-tablet-desktop@1x.webp 1x, images/slider/slider-after-tablet-desktop@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" media="(min-width:320px)"
+              srcset="images/slider/slider-after-mobile@1x.webp 1x, images/slider/slider-after-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width:768px)"
                 srcset="images/slider/slider-after-tablet-desktop@1x.png 1x,images/slider/slider-after-tablet-desktop@2x.png 2x">
-              <img class="slider__image" src="images/slider/slider-after-mobile@1x.png"
+              <img class="slider__image"  loading="lazy" src="images/slider/slider-after-mobile@1x.png"
               srcset="images/slider/slider-after-mobile@2x.png 2x"
               alt="Изображение   кота после использования продукта" width="280" height="256">
             </picture>
@@ -182,12 +198,19 @@
         </header>
         <div class="contacts__map-container">
           <picture>
+            <source width="1440" height="400" type="image/webp" media="(min-width:1440px)"
+            srcset="images/contacts/map-desktop@1x.webp 1x, images/contacts/map-desktop@2x.webp 2x">
+            <source width="768" height="400" type="image/webp" media="(min-width:768px)"
+            srcset="images/contacts/map-tablet@1x.webp 1x, images/contacts/map-tablet@2x.webp 2x">
+            <source width="320" height="362" type="image/webp" media="(min-width:320px)"
+            srcset="images/contacts/map-mobile@1x.webp 1x, images/contacts/map-mobile@2x.webp 2x">
             <source width="1440" height="400" type="image/png" media="(min-width:1440px)"
               srcset="images/contacts/map-desktop@1x.png 1x, images/contacts/map-desktop@2x.png 2x">
             <source width="768" height="400" type="image/png" media="(min-width:768px)"
               srcset="source/images/contacts/map-tablet@1x.png 1x, images/contacts/map-tablet@2x.png 2x">
-            <img class=" contacts__map-image" src="images/contacts/map-mobile@1x.png"
-              srcset="images/contacts/map-mobile@2x.png 2x" alt="Как добраться" width="320" height="362">
+            <img class="contacts__map-image" loading="lazy" src="images/contacts/map-mobile@1x.png"
+              srcset="images/contacts/map-mobile@2x.png 2x"
+               alt="Как добраться" width="320" height="362">
           </picture>
           <iframe class="contacts__map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
