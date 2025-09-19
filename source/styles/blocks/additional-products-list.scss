@@ -86,7 +86,12 @@
 
 .additional-products-list__item:first-child {
   border-top: 1px solid #cdcdcd;
-  padding-top: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .additional-products-list__item:first-child {
+    padding-top: 25px;
+  }
 }
 
 @media (min-width: 1440px) {
