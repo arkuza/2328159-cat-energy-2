@@ -54,8 +54,8 @@
 @media (min-width: $desktop-width) {
   .product-preview__list {
     display: flex;
-    flex-direction: row;
     gap: 80px;
+    flex-flow: row wrap;
   }
 }
 
@@ -106,7 +106,8 @@
 
 @media (min-width: $desktop-width) {
   .product-preview__item {
-    min-width: 570px;
+    min-width: unset;
+    width: 570px;
     min-height: 374px;
     padding: 41px 52px;
   }

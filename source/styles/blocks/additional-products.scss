@@ -158,7 +158,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .additional-products__promo-image {
     display: flex;
     background-image: url("../../images/promo/promo-cat-desktop@2x.png");
@@ -183,14 +183,14 @@
   flex-shrink: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .additional-products__promo-image::before {
     width: 80px;
     height: 82px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .additional-products__promo-image::before {
     width: 80px;
     height: 83px;
@@ -208,7 +208,7 @@
   overflow-wrap: anywhere;
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .additional-products__description {
     text-align: start;
     padding-top: 5px;
