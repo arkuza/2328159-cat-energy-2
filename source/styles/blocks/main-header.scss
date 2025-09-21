@@ -87,6 +87,7 @@
 @media (min-width: $desktop-width) {
   .main-header__logo-container {
     max-width: 50%;
+    padding-right: 15px;
   }
 }
 
@@ -298,10 +299,6 @@
     background-color: #68b738;
     display: none;
   }
-
-  .main-header__menu-item:has(.main-header__menu-link:active)::after {
-    display: inline;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -333,6 +330,23 @@
   color: #000000;
   overflow-wrap: anywhere;
 }
+
+.main-header__menu-link:hover {
+  opacity: 0.6;
+}
+
+.main-header__menu-link:focus {
+  opacity: 0.6;
+}
+
+.main-header__menu-link:focus-visible {
+  opacity: 0.6;
+}
+
+.main-header__menu-link:active {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
   .main-header__menu-link {

@@ -54,6 +54,12 @@
   margin: 0;
 }
 
+@media (max-width: $mobile-only) {
+  .contacts__header-title {
+    padding-right: 8px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contacts__header-title {
     font-size: 20px;

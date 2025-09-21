@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
